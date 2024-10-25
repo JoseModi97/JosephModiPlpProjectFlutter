@@ -13,3 +13,7 @@
 
 <h1>Select a Browser Again</h1>
 <img src="https://github.com/JoseModi97/JosephModiPlpProjectFlutter/blob/main/Screen%20Shots/2.1%20-%20Pick%20a%20browser.PNG" alt="Flutter Run .bat">
+
+<h1>Wait for the project to start</h1>
+<img src="https://github.com/JoseModi97/JosephModiPlpProjectFlutter/blob/main/Screen%20Shots/3.2%20-%20Wait.PNG" alt="Flutter Run .bat">
+
