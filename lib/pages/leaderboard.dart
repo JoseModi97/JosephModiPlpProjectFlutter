@@ -294,13 +294,19 @@ class _leaderboardState extends State<leaderboard> {
       child: Column(
         children: [
           leaderContainer('Peter Salasya', 'assets/images/salasya.jpg',
-              'I am an upcoming politician ready to make change'),
-          leaderContainer('Joseph Odhiambo', 'assets/images/man.jpg',
-              'I am a software engineer who is passionate about learning'),
-          leaderContainer('Dave Chapelle', 'assets/images/dave.jpg',
-              'I am a well established comedian based in the United States'),
+              'I am an upcoming politician ready to make change', '250948'),
+          leaderContainer(
+              'Joseph Odhiambo',
+              'assets/images/man.jpg',
+              'I am a software engineer who is passionate about learning',
+              '270748'),
+          leaderContainer(
+              'Dave Chapelle',
+              'assets/images/dave.jpg',
+              'I am a well established comedian based in the United States',
+              '205000'),
           leaderContainer('Michelle Achieng', 'assets/images/michelle.jpg',
-              'I am a journalist in a well known media house', '4589'),
+              'I am a journalist in a well known media house', '100930'),
         ],
       ),
     );
