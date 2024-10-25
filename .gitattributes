@@ -1,0 +1,47 @@
+# Auto-detect text files and normalize line endings to LF
+* text=auto
+
+# Force LF line endings for specific text files
+*.sh text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.dart text eol=lf
+
+# Force CRLF line endings for Windows-specific files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Treat binary files as binary to prevent normalization
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.mp4 binary
+*.mp3 binary
+*.wav binary
+*.exe binary
+*.dll binary
+*.zip binary
+*.gz binary
+
+# Ignore changes in Dart tool files and IDE configurations
+.dart_tool/** -text
+android/.idea/** -text
+ios/.idea/** -text
+.idea/** -text
+
+# Handle gradle wrapper files correctly
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+
+# Ensure git configuration files always use LF
+.gitattributes text eol=lf
+.gitignore text eol=lf
