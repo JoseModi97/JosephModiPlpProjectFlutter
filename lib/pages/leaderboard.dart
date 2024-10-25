@@ -293,16 +293,20 @@ class _leaderboardState extends State<leaderboard> {
       padding: EdgeInsets.all(16),
       child: Column(
         children: [
-          leaderContainer('Peter Salasya', 'assets/images/salasya.jpg'),
-          leaderContainer('Joseph Odhiambo', 'assets/images/man.jpg'),
-          leaderContainer('Dave Chapelle', 'assets/images/dave.jpg'),
-          leaderContainer('Michelle Achieng', 'assets/images/michelle.jpg'),
+          leaderContainer('Peter Salasya', 'assets/images/salasya.jpg',
+              'I am an upcoming politician ready to make change'),
+          leaderContainer('Joseph Odhiambo', 'assets/images/man.jpg',
+              'I am a software engineer who is passionate about learning'),
+          leaderContainer('Dave Chapelle', 'assets/images/dave.jpg',
+              'I am a well established comedian based in the United States'),
+          leaderContainer('Michelle Achieng', 'assets/images/michelle.jpg',
+              'I am a journalist in a well known media house', '4589'),
         ],
       ),
     );
   }
 
-  Widget leaderContainer(String name, String src) {
+  Widget leaderContainer(String name, String src, String desc, String point) {
     return Container(
       margin: EdgeInsets.only(bottom: 20),
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
@@ -334,7 +338,7 @@ class _leaderboardState extends State<leaderboard> {
                     style: TextStyle(fontSize: 16),
                   ),
                   Text(
-                    'Lorem impus dolor sit amet Lorem impus dolor sit amet',
+                    desc,
                     style: TextStyle(fontSize: 12),
                   )
                 ],
@@ -348,7 +352,7 @@ class _leaderboardState extends State<leaderboard> {
                 style: TextStyle(color: Colors.grey, fontSize: 12),
               ),
               Text(
-                '48900',
+                point,
                 style: TextStyle(color: appColor, fontSize: 16),
               )
             ],
