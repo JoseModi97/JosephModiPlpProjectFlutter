@@ -1,11 +1,3 @@
-/*
-  Authors : initappz (Rahul Jograna)
-  Website : https://initappz.com/
-  App Name : Flutter UI Kit
-  This App Template Source code is licensed as per the
-  terms found in the Website https://initappz.com/license
-  Copyright and Good Faith Purchasers © 2021-present initappz.
-*/
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:quize/helper/style.dart';
@@ -116,81 +108,6 @@ class _loginState extends State<login> {
             ),
             SizedBox(
               height: 30,
-            ),
-            Row(
-              children: [
-                Expanded(
-                  flex: 6,
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset(
-                          'assets/images/fb.png',
-                          height: 25,
-                          width: 25,
-                        ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Text(
-                          'Facebook',
-                          style: TextStyle(
-                              fontFamily: 'medium',
-                              fontSize: 14,
-                              color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      elevation: 0,
-                      backgroundColor: Colors.grey.shade300,
-                      minimumSize: const Size.fromHeight(50),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Expanded(
-                  flex: 6,
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset(
-                          'assets/images/google.png',
-                          height: 25,
-                          width: 25,
-                        ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Text(
-                          'Google',
-                          style: TextStyle(
-                              fontFamily: 'medium',
-                              fontSize: 14,
-                              color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      elevation: 0,
-                      backgroundColor: Colors.grey.shade300,
-                      minimumSize: const Size.fromHeight(50),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
             ),
           ],
         ),

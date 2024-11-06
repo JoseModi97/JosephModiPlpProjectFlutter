@@ -1,11 +1,3 @@
-/*
-  Authors : initappz (Rahul Jograna)
-  Website : https://initappz.com/
-  App Name : Flutter UI Kit
-  This App Template Source code is licensed as per the
-  terms found in the Website https://initappz.com/license
-  Copyright and Good Faith Purchasers © 2021-present initappz.
-*/
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:quize/helper/style.dart';
@@ -36,7 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Quizzy',
+      title: 'ModiPlp',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,

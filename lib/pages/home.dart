@@ -1,11 +1,3 @@
-/*
-  Authors : initappz (Rahul Jograna)
-  Website : https://initappz.com/
-  App Name : Flutter UI Kit
-  This App Template Source code is licensed as per the
-  terms found in the Website https://initappz.com/license
-  Copyright and Good Faith Purchasers © 2021-present initappz.
-*/
 import 'package:flutter/material.dart';
 import 'package:quize/helper/style.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -62,7 +54,7 @@ class _homeState extends State<home> {
                         color: Colors.white,
                       ),
                       Text(
-                        'Quizzy',
+                        'ModiPlp',
                         style: whiteHeadText(),
                       ),
                       InkWell(
