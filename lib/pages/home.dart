@@ -180,13 +180,9 @@ class _homeState extends State<home> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Categories',
+                'Skills',
                 style: headText(),
               ),
-              Text(
-                'See all',
-                style: TextStyle(color: appColor),
-              )
             ],
           ),
           SizedBox(
@@ -195,144 +191,11 @@ class _homeState extends State<home> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              iconContainer(FontAwesomeIcons.rocket, 'Science'),
-              iconContainer(FontAwesomeIcons.earthAfrica, 'Geography'),
-              iconContainer(FontAwesomeIcons.tv, 'Technology'),
-              iconContainer(FontAwesomeIcons.plane, 'Travel'),
+              iconContainer(FontAwesomeIcons.rocket, 'Flutter'),
+              iconContainer(FontAwesomeIcons.earthAfrica, 'Php'),
+              iconContainer(FontAwesomeIcons.tv, 'React Native'),
+              iconContainer(FontAwesomeIcons.plane, 'Python Flask'),
             ],
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(color: Colors.grey.shade300, blurRadius: 5),
-              ],
-            ),
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    Icon(
-                      Icons.person_add,
-                      color: appColor,
-                      size: 35,
-                    ),
-                    Expanded(
-                      child: Padding(
-                        padding: EdgeInsets.only(left: 20),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Play with friend',
-                              style: TextStyle(fontSize: 16),
-                            ),
-                            Text(
-                              'Invite your friends to start quiz with you',
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 5,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => addFriends()));
-                      },
-                      child: Text(
-                        'Add a Friend',
-                        style: TextStyle(color: appColor),
-                      ),
-                    )
-                  ],
-                )
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 25),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  appColor,
-                  styleColor,
-                ],
-              ),
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(color: Colors.grey.shade300, blurRadius: 5),
-              ],
-            ),
-            child: Row(
-              children: [
-                FaIcon(
-                  FontAwesomeIcons.trophy,
-                  color: Colors.white,
-                  size: 45,
-                ),
-                Expanded(
-                  child: Padding(
-                    padding: EdgeInsets.only(left: 20),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Play Quiz Tournament',
-                          style: TextStyle(
-                              fontSize: 16,
-                              fontFamily: 'medium',
-                              color: Colors.white),
-                        ),
-                        Text(
-                          'Lorem Ipsum is simply dummy text of the printing ',
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white10,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: IconButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => chooseCategory()));
-                    },
-                    icon: Icon(
-                      Icons.arrow_forward,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ],
-            ),
           ),
         ],
       ),

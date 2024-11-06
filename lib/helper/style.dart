@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-const appColor = Color(0xFF7B5CF3);
-const styleColor = Color(0xFF619FF2);
+
+const appColor = Color.fromARGB(255, 79, 194, 33);
+const styleColor = Color.fromARGB(255, 35, 207, 44);
 
 headText() {
   return TextStyle(fontFamily: 'semi-bold', fontSize: 18);

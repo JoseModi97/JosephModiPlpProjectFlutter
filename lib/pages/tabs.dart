@@ -1,10 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:quize/helper/style.dart';
 import 'package:quize/pages/home.dart';
 import 'package:quize/pages/leaderboard.dart';
 import 'package:quize/pages/profile.dart';
-import 'package:quize/pages/withdraw.dart';
 
 class tabs extends StatefulWidget {
   tabs({Key? key}) : super(key: key);
@@ -21,7 +19,7 @@ class _tabsState extends State<tabs> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: 3,
       child: Scaffold(
         backgroundColor: Colors.white,
         bottomNavigationBar: TabBar(
@@ -45,17 +43,8 @@ class _tabsState extends State<tabs> {
             ),
             Tab(
               icon: Icon(
-                Icons.speaker,
-                color: _currentIndex == 1
-                    ? appColor
-                    : Color.fromARGB(255, 185, 196, 207),
-              ),
-              text: 'Withdraw',
-            ),
-            Tab(
-              icon: Icon(
                 Icons.leaderboard,
-                color: _currentIndex == 2
+                color: _currentIndex == 1
                     ? appColor
                     : Color.fromARGB(255, 185, 196, 207),
               ),
@@ -64,7 +53,7 @@ class _tabsState extends State<tabs> {
             Tab(
               icon: Icon(
                 Icons.person,
-                color: _currentIndex == 3
+                color: _currentIndex == 2
                     ? appColor
                     : Color.fromARGB(255, 185, 196, 207),
               ),
@@ -76,7 +65,6 @@ class _tabsState extends State<tabs> {
           physics: NeverScrollableScrollPhysics(),
           children: [
             home(),
-            withdraw(),
             leaderboard(),
             profile(),
           ],

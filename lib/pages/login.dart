@@ -91,21 +91,6 @@ class _loginState extends State<login> {
             SizedBox(
               height: 5,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Text(
-                  'Forgot Password?',
-                  style: TextStyle(color: appColor),
-                )
-              ],
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            Center(
-              child: Text('Or'),
-            ),
             SizedBox(
               height: 30,
             ),
